@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Lojinha da Perla</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Admin - Lojinha da Perla</h1>
+      <nav>
+        <a href="index.html">Ver Loja</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="admin">
+    <div class="container">
+      <h2>Adicionar Novo Produto</h2>
+      <form id="productForm">
+        <label for="productName">Nome do Produto:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productImage">URL da Imagem:</label>
+        <input type="url" id="productImage" required>
+
+        <label for="productDescription">Descri&ccedil;&atilde;o do Produto:</label>
+        <textarea id="productDescription" required></textarea>
+
+        <label for="productPrice">Pre&ccedil;o:</label>
+        <input type="text" id="productPrice" required>
+
+        <button type="button" onclick="addProduct()">Adicionar Produto</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2023 | Lojinha da Perla</p>
+    </div>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

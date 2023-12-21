@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lojinha da Perla - Produtos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Lojinha da Perla</h1>
+      <h2>"Tudo posso naquele que me fortalece"</h2>
+      <nav>
+        <a href="#">Página inicial</a>
+        <a href="Produtos.html">Produtos</a>
+        <a href="about">Sobre nós</a>
+        <a href="#">Minha Conta</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="product-details">
+    <div class="container">
+      <h2>Produtos</h2>
+      <ul class="product-list">
+        <li>
+          <a href="Produtos/kaiak.html">
+            <img src="https://static.natura.com/cdn/ff/iqwPzIoAYj_2ss-ZQP1Kq5lIZqdbKHfJlKmtzsisbWA/1702327307/public/products/108400_1_8.jpg" alt="Kaiak - Imagem do produto">
+            <h3>Kaiak</h3>
+            <p>Perfume masculino - 100ml</p>
+            <span class="original-price">R$ 155,90</span>
+            <span class="discounted-price">R$ 96,90</span>
+          </a>
+        </li>
+        <!-- Adicione entradas de produtos adicionais conforme necessário -->
+        <li>
+          <a href="Produtos/outro-produto.html">
+            <img src="caminho-da-imagem.jpg" alt="Outro Produto - Imagem do produto">
+            <h3>Outro Produto</h3>
+            <p>Descrição do produto aqui</p>
+            <span class="original-price">R$ 00,00</span>
+            <span class="discounted-price">R$ 00,00</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2023 | Lojinha da Perla</p>
+    </div>
+  </footer>
+
+  <!-- Scripts do Slick Carousel e jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
+
+</body>
+</html>
